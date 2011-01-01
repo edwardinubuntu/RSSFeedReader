@@ -6,7 +6,7 @@ RSSFeedReader is a iPhone app project for reading RSS Feed like bloodspot, and d
 Tag version
 ======
 
-* v0.1 Provide RSS feed from like bloodspot, using TTTableViewController to display 
+* v0.1 Provide RSS feed from like bloodspot, using [TTTableViewController][] to display 
 
 Overview of the Technologies
 ========================
@@ -25,3 +25,4 @@ If want to test other RSS feed, open Atlas.m file and editing the value "kSearch
 [Three20.info]: http://Three20.info
 [Three20 Mailing List]: http://groups.google.com/group/three20/
 [Three20 Scope]: http://three20.stackexchange.com
+[TTTableViewController]: https://github.com/facebook/three20/blob/master/src/Three20UI/Headers/TTTableViewController.h
