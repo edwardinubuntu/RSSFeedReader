@@ -1,7 +1,7 @@
 RSSFeedReader
 =============
 
-RSSFeedReader is a iPhone app project for reading RSS Feed like bloodspot, and display the recently feeds. Press each feed on main page, navigate to second to see the description, and if press any URL from the description, will navigate to the web view page. 
+RSSFeedReader is an iPhone app project for reading RSS Feed like bloodspot, and display the recently feeds. Press each feed on main page, will navigate to second page to see the description, and if press any URL from the description content, will navigate to the web view page. 
 
 Tag version
 ======
@@ -19,7 +19,7 @@ Three20 is a collection of iPhone UI classes, like a photo viewer, and general u
 * [Three20 Mailing List][]
 * [Three20 Scope][]
 
-If want to test other RSS feed, open Atlas.m file and editing the value "kSearchFeedFormat" and "kBlogAccount".
+If want to test and recieve other RSS feed, open Atlas.m file and editing the value "kSearchFeedFormat" and "kBlogAccount".
 
 [Facebook iPhone app]: http://phobos.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=284882215&mt=8
 [Three20.info]: http://Three20.info
