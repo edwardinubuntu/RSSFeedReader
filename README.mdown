@@ -23,10 +23,11 @@ Three20 is a collection of iPhone UI classes, like a photo viewer, and general u
 * [Three20 Mailing List][]
 * [Three20 Scope][]
 
-If want to test and recieve other RSS feed, open Atlas.m file and editing the value "kSearchFeedFormat" and "kBlogAccount".
+If want to test and recieve other RSS feed, open [Atlas.m][] file and editing the value "kSearchFeedFormat" and "kBlogAccount".
 
 [Facebook iPhone app]: http://phobos.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=284882215&mt=8
 [Three20.info]: http://Three20.info
 [Three20 Mailing List]: http://groups.google.com/group/three20/
 [Three20 Scope]: http://three20.stackexchange.com
 [TTTableViewController]: https://github.com/facebook/three20/blob/master/src/Three20UI/Headers/TTTableViewController.h
+[Atlas.m]: https://github.com/edwardinubuntu/RSSFeedReader/blob/master/Classes/Atlas.m
