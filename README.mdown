@@ -20,6 +20,7 @@ Overview of the Technologies
 This project is build on the Three20 libraries, so after download the code, also need to checkout the Three20 code, and add three20 frameworks into this project.
 
 Three20 is a collection of iPhone UI classes, like a photo viewer, and general utilities, like an HTTP disk cache. Three20 is derived from the [Facebook iPhone app][], which is one of the most downloaded iPhone apps ever. Learn more at [Three20.info][]. 
+
 If want to test and recieve other RSS feed, open [Atlas.m][] file and editing the value "kSearchFeedFormat" and "kBlogAccount".
 
 [Facebook iPhone app]: http://phobos.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=284882215&mt=8
