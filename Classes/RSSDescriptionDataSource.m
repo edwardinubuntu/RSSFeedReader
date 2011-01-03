@@ -44,8 +44,8 @@
   NSMutableArray* items = [[NSMutableArray alloc] init];
   for (RSSFeed* rssFeed in _descriptionModel.feeds) {
     
-    NSString* content = [NSString stringWithFormat:@"<b>%@</b><br/>by %@%<br/><br/>%@", 
-                      rssFeed.feedTitle,[RSSFeed extractBloggerName:rssFeed.author], rssFeed.description ];
+    NSString* content = [NSString stringWithFormat:@"<b><a href='%@'>%@</a></b><br/>by %@%<br/><br/>%@", 
+                      rssFeed.link , rssFeed.feedTitle,[RSSFeed extractBloggerName:rssFeed.author], rssFeed.description ];
     
     TTStyledText* styledText = [TTStyledText textFromXHTML:content
                                                lineBreaks:NO URLs:YES];

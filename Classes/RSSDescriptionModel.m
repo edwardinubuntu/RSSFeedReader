@@ -72,7 +72,7 @@
   TTURLXMLResponse* response = request.response;
   
   NSDictionary* feed = response.rootObject;
-  // TTDPRINT(@"Show feed content: %@", feed);
+  TTDPRINT(@"Show feed content: %@", feed);
   
   TTDASSERT([[feed objectForKey:@"channel"] isKindOfClass:[NSDictionary class]]);
   NSDictionary* channel = [feed objectForKey:@"channel"];
@@ -119,9 +119,14 @@
     rssFeed.GUID = [[item objectForKey:@"guid"] objectForXMLNode];
     TTDPRINT(@"GUID: %@", rssFeed.GUID);
     
+    // Link
+    rssFeed.link = [[item objectForKey:@"link"] objectForXMLNode];
+    TTDPRINT(@"Link: %@", rssFeed.link);
+    
     // Add each feed
     if ([rssFeed.GUID compare:self.searchGUID] == NSOrderedSame) {
       [feedItems addObject:rssFeed];
+      break;
     }
     TT_RELEASE_SAFELY(rssFeed);
   }
