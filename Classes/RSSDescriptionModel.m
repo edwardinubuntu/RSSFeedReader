@@ -105,7 +105,7 @@
     rssFeed.publishDate = date;
     
     // Author
-    rssFeed.author = [[item objectForKey:@"author"] objectForXMLNode];
+    rssFeed.author = [[item objectForKey:kAuthorKey] objectForXMLNode];
     
     rssFeed.feedTitle = [[item objectForKey:@"title"] objectForXMLNode];
     
@@ -113,7 +113,7 @@
     // rssFeed.category = [[item objectForKey:@"category"] objectForXMLNode];
     
     // description
-    rssFeed.description = [[item objectForKey:@"description"] objectForXMLNode];
+    rssFeed.description = [[item objectForKey:kContentKey] objectForXMLNode];
     
     // GUID
     rssFeed.GUID = [[item objectForKey:@"guid"] objectForXMLNode];

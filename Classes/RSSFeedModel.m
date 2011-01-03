@@ -99,7 +99,7 @@
     rssFeed.publishDate = date;
     
     // Author
-    rssFeed.author = [[item objectForKey:@"author"] objectForXMLNode];
+    rssFeed.author = [[item objectForKey:kAuthorKey] objectForXMLNode];
     
     rssFeed.feedTitle = [[item objectForKey:@"title"] objectForXMLNode];
     

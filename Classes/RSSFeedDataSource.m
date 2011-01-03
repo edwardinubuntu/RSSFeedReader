@@ -50,9 +50,10 @@ static int subLength = 25;
     
     
     NSMutableString *accessURL = [[NSMutableString alloc] initWithString:@"tt://description/"];
-    if (rssFeed.GUID != nil) {
+    if (rssFeed.GUID != nil && kIsUsingGUIDForDescription) {
       [accessURL appendString:rssFeed.GUID];
     }
+    TTDPRINT(@"Access URL: %@", accessURL);
     
     // Mark this one, before category fixed
     // [items addObject:[TTTableMessageItem itemWithTitle:author caption:rssFeed.category text:rssFeed.feedTitle timestamp:rssFeed.publishDate URL:accessURL]];
@@ -60,10 +61,22 @@ static int subLength = 25;
     // Handle the Text
     NSString* text = rssFeed.feedTitle;
     
+    // Handle the auther
+    NSString *auther = [[NSString alloc] initWithString:@""];
+    if (kIsBloggerAuthorName) {
+      auther = [RSSFeed extractBloggerName:rssFeed.author];
+    } else if (rssFeed.author == nil) {
+      auther = @"";
+    } else {
+      auther = rssFeed.author;
+    }
+
     // Handle the sub Title
     NSString* subTitle = [NSString stringWithFormat:@"%@ - %@", 
-                          [RSSFeed extractBloggerName:rssFeed.author], [rssFeed.publishDate formatRelativeTime] ];
+                          auther, [rssFeed.publishDate formatRelativeTime] ];
 
+    TT_RELEASE_SAFELY(auther);
+    
     if ([text length] >= subLength) {
       text = [NSString stringWithFormat:@"%@ %@", 
               [text substringToIndex:subLength],@"..." ];

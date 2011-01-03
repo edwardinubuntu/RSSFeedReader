@@ -13,7 +13,23 @@ NSString* kAppRootURLPath = @"tt://root";
 NSString* kAppDescriptionPath = @"tt://description/";
 NSString* kAppDescriptionURLPath = @"tt://description/(initWithGUID:)";
 
+// Other kind of rss feed
+/*
+NSString* kSearchFeedFormat = @"http://pingchu.com/?feed=rss2";
+NSString* kAuthorKey = @"dc:creator";
+NSString* kBlogAccount = @"ping";
+BOOL* kIsBloggerAuthorName=NO;
+NSString* kContentKey = @"content:encoded";
+BOOL* kIsUsingGUIDForDescription = NO;
+*/
+ 
+/*
+ * Blogger Setting
+ */
 // Setting for the feeds source
 NSString* kSearchFeedFormat = @"http://%@.blogspot.com/feeds/posts/default?alt=rss";
-// Setting for the blog account.
 NSString* kBlogAccount = @"edwardinaction";
+NSString* kAuthorKey = @"author";
+BOOL* kIsBloggerAuthorName=YES;
+NSString* kContentKey = @"description";
+BOOL* kIsUsingGUIDForDescription = YES;
