@@ -11,6 +11,7 @@ Tag version
 ======
 
 * v0.1 Provide RSS feed from like bloodspot, using [TTTableViewController][] to display 
+* v0.2 Add supporing orientation, and add blog link to the description title.
 
 Overview of the Technologies
 ========================
