@@ -20,7 +20,7 @@ NSString* kAuthorKey = @"dc:creator";
 NSString* kBlogAccount = @"ping";
 BOOL* kIsBloggerAuthorName=NO;
 NSString* kContentKey = @"content:encoded";
-BOOL* kIsUsingGUIDForDescription = NO;
+BOOL* kIsUsingGUIDForDescription = YES;
 */
  
 /*

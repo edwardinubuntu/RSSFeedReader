@@ -29,4 +29,7 @@
 
 + (NSString*)extractBloggerName:(NSString*)author;
 
+// Escape ReservideWords
++ (NSString*)escapeReservedWords:(NSString*)originalText;
+
 @end

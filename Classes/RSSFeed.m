@@ -39,4 +39,12 @@
   
 }
 
++ (NSString*)escapeReservedWords:(NSString*)originalText {
+  TTDPRINT(@"Before escape guid: %@",originalText);
+  NSString* escapeText = [originalText stringByReplacingOccurrencesOfString:@"/" withString:@"-"];
+  escapeText = [escapeText stringByReplacingOccurrencesOfString:@"?" withString:@"-"];
+  TTDPRINT(@"After escape guid: %@",originalText);
+  return escapeText;
+}
+
 @end

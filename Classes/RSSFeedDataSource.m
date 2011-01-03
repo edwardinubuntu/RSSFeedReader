@@ -51,7 +51,7 @@ static int subLength = 25;
     
     NSMutableString *accessURL = [[NSMutableString alloc] initWithString:@"tt://description/"];
     if (rssFeed.GUID != nil && kIsUsingGUIDForDescription) {
-      [accessURL appendString:rssFeed.GUID];
+      [accessURL appendString:[RSSFeed escapeReservedWords:rssFeed.GUID]];
     }
     TTDPRINT(@"Access URL: %@", accessURL);
     
